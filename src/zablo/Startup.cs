@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using zablo.Domains;
 
 namespace zablo
 {
@@ -33,6 +34,11 @@ namespace zablo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var register = new Register(services);
+
+            //init service repository
+            register.Init();
+
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
 
