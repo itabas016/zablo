@@ -1,5 +1,7 @@
 #zablo - Personal Application
 
+[![Build Status](https://travis-ci.org/itabas016/zablo.svg?branch=master)](https://travis-ci.org/itabas016/zablo) [![Build status](https://ci.appveyor.com/api/projects/status/n4b49c54ntq4jo02?svg=true)](https://ci.appveyor.com/project/itabas016/zablo)
+
 Offical site see [here](https://dotnet.github.io/), how to started it and documentation API reference.
 
 ##Environment
